@@ -1,0 +1,48 @@
+.h1-custom:hover{
+    color: #04AA6D;
+}
+.w3school{
+    color: pink;
+}
+.w3school:hover{
+    color: #03ffa2;
+}
+#w3_cert_badge{
+    right: 5%;
+    width: 220px;
+    transform: rotate(10deg);
+    bottom: -15%;
+    position: absolute;
+
+}
+#w3_cert_arrow{
+    position: absolute;
+    right: 240px;
+    width: 220px;
+    transform: rotate(10deg);
+    bottom: 0;
+    z-index: 1;
+}
+#button:hover{
+    background-color:#04AA6D;
+}
+.terms{
+    text-decoration: underline;
+}
+.terms:hover{
+    color: #04AA6D;
+}.cookie:hover{
+    color: #04AA6D;
+}
+.cookie{
+    text-decoration: underline;
+}
+.copy{
+    text-decoration: underline;
+}
+.copy:hover{
+    color: #04AA6D;
+}
+.html:hover{
+    color: #04AA6D;
+}

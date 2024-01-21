@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand me-2"></a>
+                <a title="W3Schools" href="https://www.w3schools.com/" target="_blank"><img width="50" height="45px" 
+                        alt="W3Schools logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/32px-W3Schools_logo.svg.png"></a>
+            
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle ms-4" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tutorials
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Learn CSS</a></li>
+                            <li><a class="dropdown-item" href="#">Learn HTML</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Learn more</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            References
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">HTML Tag Reference</a></li>
+                            <li><a class="dropdown-item" href="#">HTML Browse Reference</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Other References</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Exercises
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">HTML Exercise</a></li>
+                            <li><a class="dropdown-item" href="#">CSS Exercise</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Other Exercises</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Sign Up</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Bootcamp</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-dark ps-3 pe-3 rounded-pill text-light" aria-current="page"
+                                href="#">Pro</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link btn ps-3 pe-3 rounded-pill text-dark" style="background-color: pink;"
+                                href="#">Get Certified</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link btn btn-warning ps-3 pe-3 rounded-pill text-dark" href="#">Create
+                                Website</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link btn btn-success ps-3 pe-3 rounded-pill text-light" href="#">Log In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="search float-end me-3" style=" background-color: #282A35;">
+        <button class=" btn btn-dark text-light ms-2">
+            <i class="bi bi-circle-half"></i>
+        </button>
+        <button class="btn btn-dark text-light ms-2">
+            <i class="bi bi-globe-central-south-asia"></i>
+        </button>
+
+        <button class="btn btn-dark text-light ms-2">
+            <i class="bi bi-search"></i>
+        </button>
+
+    </div>
+    <div class="container-fluid text-center" style="height:500px; background-color: #282A35;">
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h1 class="text-light display-3 fw-bolder">Learn to Code</h1>
+        <h1 class="fw-bold fs-4 mt-4" style="color: palevioletred">With the world's largest web developer site.</h1>
+
+        <div class="input-group mt-4 p-1 m-auto" style="width: 550px;">
+            <input type="search" class="form-control rounded-start-pill" placeholder="Search our Tutorials,e.g.HTML"
+                aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" class="btn btn-success rounded-end-pill">Search</button>
+        </div>
+        <br>
+        <a href="" class="fw-bold fs-4 h1-custom">Not Sure Where to Begin?</a>
+    </div>
+    <svg style="background-color:#D9EEE1;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+    </svg>
+    <div class="container-fluid" style="background-color: #D9EEE1;">
+        <div class="row">
+            <div class="col-6 text-center mt-5">
+                <h1 class="fw-bolder display-1" style="color: black;">HTML</h1>
+                <h4 class="fs-5 text-dark mt-4">The language for building web pages</h4>
+                <button class="btn rounded-pill btn-success text-light mt-3 ps-5 pe-5 p-2 fw-medium border-0">
+                    Learn HTML
+                </button>
+                <br>
+                <button class="btn rounded-pill btn-dark text-light mt-4 ps-4 pe-4 p-2 fw-medium border-0">
+                    HTML Reference
+                </button>
+                <br>
+                <button class=" btn rounded-pill mt-4 ps-5 pe-5 p-2 fw-medium border-0" style="background-color: pink;">
+                    Get Certified
+                </button>
+
+            </div>
+            <div class="col-6 mt-5" style="height: 480px; width: 650px;">
+                <div class="card">
+                    <h5 class="card-header">HTML Example:</h5>
+                    <div class="card-body">
+                        <code>
+                            <div class="w3-code htmlHigh notranslate green-border border-start border-success" style="height: 280px; border-left: 4px solid #04AA6D;">
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span>HTML Tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a heading<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><b><br>
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                                   </div>
+                      </code>
+                        <a href="#" class="btn btn-success rounded-pill p-2 pe-5 ps-5 fw-bold">Try it Yourself</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #FFF4A3; height:550px;">
+        <div class="row">
+            <div class="col-6 text-center mt-5">
+                <h1 class="fw-bolder display-1" style="color: black;">CSS</h1>
+                <h4 class="fs-5 text-dark mt-4">The language for styling web pages</h4>
+                <button class="btn rounded-pill btn-success text-light mt-3 ps-5 pe-5 p-2 fw-medium border-0">
+                    Learn CSS
+                </button>
+                <br>
+                <button class="btn rounded-pill btn-dark text-light mt-4 ps-4 pe-4 p-2 fw-medium border-0">
+                    CSS Reference
+                </button>
+                <br>
+                <button class=" btn rounded-pill mt-4 ps-5 pe-5 p-2 fw-medium border-0" style="background-color: pink;">
+                    Get Certified
+                </button>
+
+            </div>
+            <div class="col-6 mt-5" style="width: 650px;">
+                <div class="card">
+                    <h5 class="card-header">CSS Example:</h5>
+                    <div class="card-body">
+
+                        <code>
+                            <span class="cssselectorcolor" style="color:brown">
+                                body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                                &nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightblue<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+                                h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                                &nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                                &nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> verdana<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span></span>
+                            </div>
+                        </code>
+                        <a href="#" class="btn btn-success rounded-pill ms-3 p-2 pe-5 ps-5 fw-bold m-3"
+                            style="width: 230px;">Try it Yourself</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #282A35; height:450px;">
+        <div class="row">
+            <div class="col-6 text-center mt-5">
+                <h1 class="fw-bold display-2 text-light">Java Script</h1>
+                <h4 class="fs-5 text-light mt-4">The language for styling web pages</h4>
+                <button class="btn rounded-pill btn-success text-light mt-3 ps-5 pe-5 p-2 fw-medium border-0">
+                    Learn Java Script
+                </button>
+                <br>
+                <button class="btn rounded-pill btn-warning mt-4 ps-4 pe-4 p-2 fw-medium border-0"
+                    style="background-color: rgb(251, 205, 145);">
+                    Java Script Reference
+                </button>
+                <br>
+                <button class=" btn rounded-pill mt-4 ps-5 pe-5 p-2 fw-medium border-0" style="background-color: pink;">
+                    Get Certified
+                </button>
+
+            </div>
+            <div class="col-6 mt-5" style="width: 650px;">
+                <div class="card">
+                    <h5 class="card-header">Java Script Example:</h5>
+                    <div class="card-body">
+
+                        <code>
+                            <div class="htmlHigh">
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> onclick<span class="attributevaluecolor" style="color:mediumblue">="myFunction()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Click Me!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>
+                                <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br><span class="jsnumbercolor" style="color:red">
+                                </span>     &nbsp; <span class="jskeywordcolor" style="color:mediumblue">let</span> x = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>);<br><span class="jsnumbercolor" style="color:red">
+                                </span>&nbsp; x.<span class="jspropertycolor" style="color:black">style</span>.<span class="jspropertycolor" style="color:black">fontSize</span> = <span class="jsstringcolor" style="color:brown">"25px"</span>; <br><span class="jsnumbercolor" style="color:red">
+                                </span>&nbsp; x.<span class="jspropertycolor" style="color:black">style</span>.<span class="jspropertycolor" style="color:black">color</span> = <span class="jsstringcolor" style="color:brown">"red"</span>; <br>}<br>
+                                </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                                    </div>
+                        </code>
+                        <a href="#" class="btn btn-success rounded-pill mt-3 p-2 pe-5 ps-5 fw-bold m-1"
+                            style="width: 230px;">Try it Yourself</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #F3ECEA; height:450px;">
+        <div class="row">
+            <div class="col-6 text-center mt-5">
+                <h1 class="fw-bold display-2" style="color: black;">Python</h1>
+                <h4 class="fs-5 text-dark mt-4">A popular programming language</h4>
+                <button class="btn rounded-pill btn-success text-light mt-3 ps-5 pe-5 p-2 fw-medium border-0">
+                    Learn Python
+                </button>
+                <br>
+                <button class="btn rounded-pill btn-warning mt-4 ps-4 pe-4 p-2 fw-medium border-0 bg-dark text-light">
+                    Python Reference
+                </button>
+                <br>
+                <button class=" btn rounded-pill mt-4 ps-5 pe-5 p-2 fw-medium border-0" style="background-color: pink;">
+                    Get Certified
+                </button>
+            </div>
+            <div class="col-6 mt-5" style="width: 650px;">
+                <div class="card">
+                    <h5 class="card-header">Python Example:</h5>
+                    <div class="card-body">
+                        <code>
+                        <div class="w3-code jsHigh notranslate green-border" style="height:180px"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                        </span>    <span class="jskeywordcolor" style="color:mediumblue">if</span> <span class="jsnumbercolor" style="color:red">5</span> &gt; <span class="jsnumbercolor" style="color:red">2</span>:<br>&nbsp; print(<span class="jsstringcolor" style="color:brown">"Five is greater than two!"</span>)<span class="jsnumbercolor" style="color:red">
+                        </span>  </span></div></code>
+                    </div>
+                    <a href="#" class="btn btn-success rounded-pill p-2 pe-5 ps-5 fw-bold m-3" style="width: 230px;">Try
+                        it Yourself</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid" style="background-color: #96D4D4; height:450px;">
+        <div class="row">
+            <div class="col-6 text-center mt-5">
+                <h1 class="fw-bold display-2" style="color: black;">SQL</h1>
+                <h4 class="fs-5 text-dark mt-4">The language for styling web pages</h4>
+                <button class="btn rounded-pill btn-success text-light mt-3 ps-5 pe-5 p-2 fw-medium border-0">
+                    Learn SQL
+                </button>
+                <br>
+                <button class="btn rounded-pill btn-warning mt-4 ps-5 pe-5 p-2 fw-medium border-0 bg-dark text-light">
+                    SQL Reference
+                </button>
+                <br>
+                <button class=" btn rounded-pill mt-4 ps-5 pe-5 p-2 fw-medium border-0" style="background-color: pink;">
+                    Get Certified
+                </button>
+
+            </div>
+            <div class="col-6 mt-5" style="width: 650px;">
+                <div class="card">
+                    <h5 class="card-header">Java Script Example:</h5>
+                    <div class="card-body">
+
+                        <code>
+                        <div class="w3-code sqlHigh notranslate green-border" style="height:210px"><span class="sqlcolor" style="color:black"><span class="sqlnumbercolor" style="color:">
+                        </span>   <span class="sqlkeywordcolor" style="color:mediumblue">SELECT</span> * <span class="sqlkeywordcolor" style="color:mediumblue">FROM</span> Customers<br><span class="sqlnumbercolor" style="color:">
+                        </span>   <span class="sqlkeywordcolor" style="color:mediumblue">WHERE</span> Country=<span class="sqlstringcolor" style="color:brown">'Mexico'</span>;<span class="sqlnumbercolor">
+                        </span>  </span></div></code>
+                    </div>
+                    <a href="#" class="btn btn-success rounded-pill p-2 pe-5 ps-5 fw-bold m-3 mt-0"
+                        style="width: 230px;">Try it Yourself</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid text-center bg-dark">
+        <div class="row">
+            <div class="col-sm-6 p-5 mt-4 ms-5" style="width:700px;">
+                <div class="card">
+                    <div class="card-body" style="background-color:pink;height:270px">
+                        <h5 class="card-title fw-bold display-5" style="color: black;">PHP</h5>
+                        <p class="card-text mt-4">A web server programming language</p>
+                        <a href="#" class="btn btn-dark m-xxl-5 rounded-pill p-2 ps-5 pe-5">Learn PHP</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 p-5 mt-4 me-5" style="width:700px;">
+                <div class="card">
+                    <div class="card-body" style="background-color:#FFF4A3;height:270px">
+                        <h5 class="card-title fw-bold display-5" style="color: black;">jQuery</h5>
+                        <p class="card-text mt-4">A JS library for developing web pages</p>
+                        <a href="#" class="btn btn-dark m-xxl-5 rounded-pill p-2 ps-5 pe-5">Learn jQuery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="container-fluid text-center bg-dark">
+        <div class="row">
+            <div class="col-sm-6 p-5 ms-5" style="width:700px;">
+                <div class="card">
+                    <div class="card-body" style="background-color:#F3ECEA;height:270px">
+                        <h5 class="card-title fw-bold display-5" style="color: black;">Java</h5>
+                        <p class="card-text mt-4">A programming language</p>
+                        <a href="#" class="btn btn-dark m-xxl-5 rounded-pill p-2 ps-5 pe-5">Learn Java</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 p-5 me-5" style="width:700px;">
+                <div class="card">
+                    <div class="card-body" style="background-color:#D9EEE1;height:270px">
+                        <h5 class="card-title fw-bold display-5" style="color: black;">C++</h5>
+                        <p class="card-text mt-4">A programming language</p>
+                        <a href="#" class="btn btn-dark m-xxl-5 rounded-pill p-2 ps-5 pe-5">Learn C++</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="container-fluid text-center bg-dark">
+        <div class="row">
+            <div class="col-sm-6 p-5 ms-5" style="width:700px;">
+                <div class="card">
+                    <div class="card-body" style="background-color:#96D4D4;height:270px">
+                        <h5 class="card-title fw-bold display-5" style="color: black;">W3.CSS</h5>
+                        <p class="card-text mt-4">A CSS framework for faster and better responsive web pages</p>
+                        <a href="#" class="btn btn-dark m-xxl-5 rounded-pill p-2 ps-5 pe-5">Learn W3.CSS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 p-5 me-5" style="width:700px;">
+                <div class="card">
+                    <div class="card-body" style="background-color:#E7E9EB;height:270px">
+                        <h5 class="card-title fw-bold display-5" style="color: black;">Bootstrap</h5>
+                        <p class="card-text mt-4">A CSS framework for designing better web pages</p>
+                        <a href="#" class="btn btn-dark m-xxl-5 rounded-pill p-2 ps-5 pe-5">Learn Bootstrap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="container-fluid text-center bg-dark">
+        <div class="row">
+            <div class="col-sm-6 p-5 ms-5 mt-4" style="width:700px;">
+                <div class="card">
+                    <div class="card-body" style="background-color:pink;height:100px;cursor: pointer;">
+                        <h5 class="card-title fw-medium fs-2 p-3" style="color: black;">C</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 p-5 me-5 mt-4" style="width:700px;">
+                <div class="card">
+                    <div class="card-body" style="background-color:#FFF4A3!;height:100px">
+                        <h5 class="card-title fw-medium fs-2 p-3" style="color: black;cursor: pointer;">C#</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3 p-2 ps-5 ms-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#F3ECEA;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">R</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#D9EEE1;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Kotlin</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#96D4D4;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Node.js</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-0" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:pink;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">React</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#FFF4A3;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">JSON</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#F3ECEA;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">AngularJS</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#D9EEE1;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">MySQL</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#96D4D4;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">XML</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:pink;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Sass</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#FFF4A3;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Icons</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#F3ECEA;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">RWD</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#D9EEE1;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Graphics</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#96D4D4;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">SVG</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:pink;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Canvas</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#FFF4A3;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Raspberry Pi</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#F3ECEA;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Cyber Security</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#D9EEE1;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Colors</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#96D4D4;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Git</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:pink;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Matplotlib</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#FFF4A3;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">NumPy</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#F3ECEA;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Pandas</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#D9EEE1;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">SciPy</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#96D4D4;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">ASP</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:pink;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Accessibilty</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#FFF4A3;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">AppML</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#F3ECEA;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Go</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#D9EEE1;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Type Script</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#96D4D4;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Django</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:pink;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">MangoDB</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#FFF4A3;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Statistics</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#F3ECEA;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Data Science</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2 ps-5 ms-5 mt-5" style="width:300px;">
+                        <div class="card">
+                            <div class="card-body" style="background-color:#D9EEE1;height:120px;cursor: pointer;">
+                                <h3 class="p-4" style="color: black;">Typing Speed</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-5 ms-5 mt-1" style="width:700px;">
+                        <div class="card">
+                            <div class="card-body p-3" style="background-color:#96D4D4;height:115px">
+                                <h5 class="card-title fw-medium fs-2 p-3" style="color: black;cursor:pointer;">Excel
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-5 me-5 mt-1" style="width:700px;">
+                        <div class="card">
+                            <div class="card-body p-3" style="background-color:#FFF4A3;height:115px">
+                                <h5 class="card-title fw-medium fs-2 p-3" style="color: black;cursor: pointer;">Google
+                                    Sheets</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-5 ms-5 mt-0" style="width:700px;">
+                        <div class="card">
+                            <div class="card-body p-3" style="background-color:pink;height:115px">
+                                <h5 class="card-title fw-medium fs-2 p-3" style="color: black;cursor: pointer;">Machine
+                                    Learning</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-5 me-5 mt-xxl-0" style="width:700px;">
+                        <div class="card">
+                            <div class="card-body p-3" style="background-color:#F3ECEA;height:115px">
+                                <h5 class="card-title fw-medium fs-2 p-3" style="color: black;cursor: pointer;">
+                                    Artificial Intelligence</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-light">
+                <h1 class="display-4 fw-bold mt-5">Code Editor</h1>
+                <p class="mt-3 fs-5 fw-medium">With our online code editor, you can edit code and view the result in
+                    your browser</p>
+            </div>
+            <div class="col-6 mt-5 mx-auto" style="width: 850px;">
+                <div class="card">
+                    <h5 class="card-header fs-6">www.w3schools.com/tryit/</h5>
+                    <div class="card-body">
+                        <button class="border-0 fs-6 fw-bold float-lg-start">Frontend</button>
+                        <button class="border-0 fs-6 fw-bold float-lg-start bg-light">Backend</button>
+                    </div>
+                    <div class="search  me-3">
+                        <button class=" btn text-dark ms-2 float-start btn-lg fs-4">
+                            <i class="bi bi-house-door-fill"></i>
+                        </button>
+                        <button class="btn text-dark ms-2 float-start btn-lg fs-4">
+                            <i class="bi bi-menu-button-wide"></i>
+                        </button>
+
+                        <button class="btn text-dark ms-2 float-start btn-lg fs-4">
+                            <i class="bi bi-sd-card-fill"></i>
+                        </button>
+                        <button class="btn text-dark ms-2 float-start btn-lg fs-4">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </button>
+                        <button class="btn text-dark ms-2 float-start btn-lg fs-4">
+                            <i class="bi bi-circle-half"></i>
+                        </button>
+                        <button class="btn text-light btn-success ms-3 float-start btn-lg fs-6 fw-medium mt-1">
+                            Run >
+                        </button>
+                    </div>
+                    <code>
+                        <div class=" float-lg-start mt-2" style=" border-left: 4px solid #04AA6D;">
+                            <span class="tagnamecolor float-start" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                            <span class="tagnamecolor float-start" style="color:brown"><span class="tagcolor " style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt; <br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a heading<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><b><br>
+                            <span class="tagnamecolor float-start" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                            <span class="tagnamecolor float-start" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><br>
+                            </div>
+                  </code>
+                </div>
+                <br>
+                <button class="btn btn-success rounded-2 text-light fw-bold p-2 border-0 float-start pe-3 ps-3">Try
+                    Frontend
+                    Editor(HTML/CSS/JS)</button>
+                <br>
+                <br>
+                <button class="rounded-2 text-dark fw-bold p-2 border-0 mt-3 float-xxl-start pe-3 ps-3"
+                    style="background-color: #FFF4A3;">Try Backend Editor(Python/PHP/Java/C..)</button> <br>
+                <br><br><br> <br>
+
+                <div class="container text-light text-center mt-5">
+                    <h1 class="display-4 fw-bold">W3Schools Spaces</h1>
+                    <p class="mt-3 fs-4 fw-medium lh-base">If you want to create your own website, check out <a href="#"
+                            class="w3school">W3Schools Spaces</a>. <br>
+                        It is free to use, and does not require any setup:</p>
+                </div>
+                <div>
+                    <img class="textblock float-end ms-5 img-fluid mt-5 h-25 w-100"
+                        src="https://www.w3schools.com/how-spaces-works3.png">
+
+                    <a href="#" class="btn btn-success rounded-pill mt-3 p-2 pe-lg-5 ps-lg-5 fw-bold m-2 fs-5"
+                        style="width: 270px;">Learn more</a>
+                </div>
+            </div>
+            <br><br><br><br>
+            <div class="container-fluid" style="background-color: #D9EEE1; height:980px;"><br><br>
+                <p class="text-black display-3 fw-bold mt-5">My Learning</p>
+                <pre class="lh-lg fw-medium fs-5 text-black"
+                    style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Track your progress with our <strong>free </strong> "My Learning" program.
+Log in to your account, and start earning points!
+                </pre>
+                <div>
+                    <img class="img-fluid" src="w3ss.png" alt="" style="width: 1000px;">
+                </div>
+                <a href="#" class="btn btn-success rounded-pill mt-5 p-2 pe-xl-5 ps-xl-5 fw-medium m-2 fs-5"
+                    style="width: 270px;">Sign Up for free</a>
+            </div>
+            <div class="container-fluid" style="background-color: #282A35; height:550px;"><br><br>
+                <p class="text-light display-5 fw-bold mt-5">Become a PRO User</p>
+                <p class="fs-4 fw-medium" style="color:pink">And unlock powerful features:</p><br>
+                <div class="lh-lg col-11 fw-medium">
+                    <div><i class="bi bi-check-circle-fill text-light"></i><span class="text-light"> Browse W3Schools
+                            without ads</span>
+                        <div><i class="bi bi-check-circle-fill text-light ms-lg-5"></i><span class="text-light"> Website
+                                hosting (Includes <span style="text-decoration: underline;">Spaces</span> PRO)</span>
+                            <div><i class="bi bi-check-circle-fill text-light ms-md-4"></i><span class="text-light">
+                                    Access to our <span style="text-decoration: underline;" class="html">HTML Video Tutorial</span>
+                                </span>
+                            </div>
+                            <a href="#"
+                                class="btn btn-success rounded-pill mt-5 p-2 pe-lg-5 ps-lg-5 fw-medium ms-5 fs-5"
+                                style="width: 270px;">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" style="height:500px;background-color: #F3ECEA;"><br><br>
+                <p class="text-black display-3 fw-bold mt-5">Color Picker</p>
+                <p class="text-black fw-medium mt-2 fs-5">W3Schools' famous color picker:</p>
+                <img src="colorpicker.gif" alt="" class="display-6 mt-4"
+                    style="height: 150px; width: 180px;cursor: pointer;">
+            </div>
+            <div class="container-fluid" style="background-color: #96D4D4; height:600px;"><br><br>
+                <h1 class="display-5 fw-bolder mt-5 text-black" style="font-family: 'Freckle Face', cursive;">Code Game
+                </h1>
+                <h2 class="fs-2 fw-bolder text-black" style="font-family: 'Freckle Face', cursive;">Help the Lynx
+                    collect pine cones!</h2>
+                <div>
+                    <img src="fox2.png" alt="" style="width: 130px;height: 210px;" class="mt-4">
+                </div>
+                <a href="#" class="btn btn-dark rounded-pill mt-4 p-2 pe-2 ps-2 fw-medium ms-3 fs-5"
+                    style="width: 200px;">Play Game</a>
+            </div>
+            <div class="container-fluid bg-dark" style="height:500px;"><br><br>
+                <h1 class="text-light display-3 fw-semibold mt-4">Exercises and Quizzes</h1>
+                <h4 class="text-light mt-4">Test your skills!</h4>
+                <div class="row">
+                    <div class="col-sm-6 p-5 ms-xxl-auto mt-1" style="width:650px;">
+                        <div class="card border-0">
+                            <div class="card-body p-5 btn btn-success" style="height:175px">
+                                <h5 class="card-title fw-medium fs-2 p-3 text-light"
+                                    style="color: black;cursor:pointer;">
+                                    Exercises
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-5 me-xxl-auto mt-1" style="width:650px;">
+                        <div class="card">
+                            <div class="card-body p-5" style="height:175px;background-color: #FFF4A3;">
+                                <h5 class="card-title fw-medium fs-2 p-3 text-black"
+                                    style="color: black;cursor:pointer;">
+                                    Quizzes
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mt-4" style="background-color: #E7E9EB;">
+                <h1 class="text-black fw-bold display-3 pt-lg-5">Web Templates</h1>
+                <h4 class="text-black fs-5 mt-4">Browse our selection of <strong>free </strong> responsive HTML
+                    Templates</h4>
+                <img src="scene.png" alt="" class=" w-75 mt-4 img-fluid" style="cursor: pointer;">
+                <a href="#" class="btn btn-dark rounded-4 p-3 pe-2 mt-4 ps-2 fw-medium fs-5"
+                    style="width: 800px;">Browse Templates</a>
+                <br><br><br><br> <br>
+            </div>
+            <div class="container-fluid mt-5 bg-dark" style="color: rgb(255, 158, 174);">
+                <h1 class="float-start display-3 fw-medium ms-5 mt-4">Kickstart your career</h1>
+                <h2 class="float-start display-5 mt-5 fw-medium ms-5">Get certified by completing a course</h2>
+                <br><br><br><br><br><br><br><br><br><br>
+                <a href="#" class="btn btn-success rounded-pill p-3 pe-2 mt-4 ps-2 fw-medium fs-5 float-start ms-5 "
+                    style="width: 210px;">Get Started</a>
+            </div>
+            <div class=" position-relative mt-5 p-lg-5">
+                <svg class="" id="w3_cert_arrow" viewBox="0 0 170 143" fill="none" xmlns="http://www.w3.org/2000/svg0">
+                    <path
+                        d="M9.7747 42.7064C9.7747 42.7064 19.5575 77.2951 44.4558 84.8113C62.0225 90.1142 81.0061 80.1196 77.791 68.3309C76.0904 62.0955 69.0574 62.4735 65.5106 65.8444C59.1003 71.9368 67.8591 89.7423 77.9205 96.1324C112.816 118.295 161.943 84.5867 161.943 84.5867"
+                        stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M159.804 93.8429L162.704 84.4917L152.715 80.8293" stroke="white" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <svg id="w3_cert_badge" data-name="w3_cert_badge" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 300 300">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #04aa6b;
+                            }
+
+                            .cls-2 {
+                                font-size: 23px;
+                            }
+
+                            .cls-2,
+                            .cls-3,
+                            .cls-4 {
+                                fill: #fff;
+                            }
+
+                            .cls-2,
+                            .cls-3 {
+                                font-family: RobotoMono-Medium, Roboto Mono;
+                                font-weight: 500;
+                            }
+
+                            .cls-3 {
+                                font-size: 20.08px;
+                            }
+                        </style>
+                    </defs>
+                    <circle class="cls-1" cx="150" cy="150" r="146.47" transform="translate(-62.13 150) rotate(-45)">
+                    </circle><text class="cls-2" transform="translate(93.54 63.89) rotate(-29.5)">w</text><text
+                        class="cls-2" transform="translate(107.13 56.35) rotate(-20.8)">3</text><text class="cls-2"
+                        transform="matrix(0.98, -0.21, 0.21, 0.98, 121.68, 50.97)">s</text><text class="cls-2"
+                        transform="translate(136.89 47.84) rotate(-3.47)">c</text><text class="cls-2"
+                        transform="translate(152.39 47.03) rotate(5.12)">h</text><text class="cls-2"
+                        transform="translate(167.85 48.54) rotate(13.72)">o</text><text class="cls-2"
+                        transform="translate(182.89 52.35) rotate(22.34)">o</text><text class="cls-2"
+                        transform="matrix(0.86, 0.52, -0.52, 0.86, 197.18, 58.36)">l</text><text class="cls-2"
+                        transform="matrix(0.77, 0.64, -0.64, 0.77, 210.4, 66.46)">s</text><text class="cls-3"
+                        transform="translate(35.51 186.66) rotate(69.37)"> </text><text class="cls-3"
+                        transform="matrix(0.47, 0.88, -0.88, 0.47, 41.27, 201.28)">C</text><text class="cls-3"
+                        transform="matrix(0.58, 0.81, -0.81, 0.58, 48.91, 215.03)">E</text><text class="cls-3"
+                        transform="matrix(0.67, 0.74, -0.74, 0.67, 58.13, 227.36)">R</text><text class="cls-3"
+                        transform="translate(69.16 238.92) rotate(39.44)">T</text><text class="cls-3"
+                        transform="matrix(0.85, 0.53, -0.53, 0.85, 81.47, 248.73)">I</text><text class="cls-3"
+                        transform="translate(94.94 256.83) rotate(24.36)">F</text><text class="cls-3"
+                        transform="translate(109.34 263.09) rotate(16.83)">I</text><text class="cls-3"
+                        transform="translate(124.46 267.41) rotate(9.34)">E</text><text class="cls-3"
+                        transform="translate(139.99 269.73) rotate(1.88)">D</text><text class="cls-3"
+                        transform="translate(155.7 270.01) rotate(-5.58)"> </text><text class="cls-3"
+                        transform="translate(171.32 268.24) rotate(-13.06)"> </text><text class="cls-2"
+                        transform="translate(187.55 266.81) rotate(-21.04)">.</text><text class="cls-3"
+                        transform="translate(203.27 257.7) rotate(-29.24)"> </text><text class="cls-3"
+                        transform="translate(216.84 249.83) rotate(-36.75)"> </text><text class="cls-3"
+                        transform="translate(229.26 240.26) rotate(-44.15)">2</text><text class="cls-3"
+                        transform="translate(240.39 229.13) rotate(-51.62)">0</text><text class="cls-3"
+                        transform="translate(249.97 216.63) rotate(-59.17)">2</text><text class="cls-3"
+                        transform="matrix(0.4, -0.92, 0.92, 0.4, 257.81, 203.04)">3</text>
+                    <path class="cls-4"
+                        d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z">
+                    </path>
+                    <path class="cls-4"
+                        d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="container-fluid mt-5 bg-white"><br><br>
+                <h1 class="text-black display-4 fw-bold mt-5">How To Section</h1>
+                <h4 class="text-black fs-5 mt-4">Code snippets for HTML, CSS and JavaScript</h4>
+                <h6 class="text-black fs-6 mt-4">For example, how to create a slideshow:</h6>
+                <img src="ice.png" alt="" class="mt-4 img-fluid" style="width: 900px;"><br>
+                <a href="#" class="btn btn-dark rounded-4 p-3 pe-2 ps-2 fw-medium fs-5 border-0" id="button"
+                    style="width: 470px;">Learn How To</a><br><br><br><br><br>
+            </div>
+                <footer class="container-fluid bg-dark p-3 mt-4">
+                    <div class="search float-end me-3 mt-5 bg-dark" style=" background-color: #282A35;">
+                        <button class=" btn btn-dark text-light ms-2 fs-5">
+                            <i class="bi bi-facebook"></i>
+                        </button>
+                        <button class="btn btn-dark text-light ms-2 fs-5">
+                            <i class="bi bi-instagram"></i>
+                        </button>
+
+                        <button class="btn btn-dark text-light ms-2 fs-5">
+                            <i class="bi bi-linkedin"></i>
+                        </button>
+                        <button class="btn btn-dark text-light ms-2 fs-5">
+                            <i class="bi bi-discord"></i>
+                        </button>
+                    </div>
+                    <a href="" class="btn btn-light float-sm-start m-1 fw-medium">QUIZZES</a>
+                    <a href="" class="btn btn-light float-sm-start m-1 fw-medium">EXERCISES</a>
+                    <a href="" class="btn btn-light float-sm-start m-1 fw-medium">CERTIFICATES</a>
+                    <a href="" class="btn btn-light float-sm-start m-1 fw-medium">UPGRADE</a>
+                    <a href="" class="btn btn-light float-sm-start m-1 fw-medium">SPACES</a>
+                    <a href="" class="btn btn-light float-sm-start m-1 fw-medium">SUPPORT</a>
+                    <a href="" class="btn btn-light float-sm-start m-1 fw-medium">NEWSLETTER</a>
+                    <br><br><br><br>
+
+                    <p class="text-light mt-5 fw-medium lh-lg"
+                        style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px;">W3Schools is optimized
+                        for learning, testing, and training. Examples might be simplified to improve reading and basic
+                        understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we
+                        cannot <br> warrant full correctness of all content. While using this site, you agree to have read
+                        and accepted our <span class="terms">terms of use </span>, <span class="cookie">cookie and privacy
+                            policy</span>.<br>
+                        <span class="copy"> Copyright 1999-2023 </span>by Refsnes Data. All Rights Reserved.
+                    </p>
+
+                    <button class="btn btn-dark text-light ms-2 fs-1">
+                        <i class="bi bi-hand-thumbs-up"></i>
+                    </button>
+                </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+                crossorigin="anonymous"></script>
+</body>
+
+</html
